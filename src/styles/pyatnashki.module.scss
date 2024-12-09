@@ -1,0 +1,57 @@
+.tile {
+  &:not(.empty) {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    background-color: white;
+    user-select: none;
+    // opacity: 0;
+    // animation: show 3s;
+    // animation-fill-mode: forwards;
+  }
+  &.empty {
+    color: transparent;
+    // -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    // opacity: 0;
+    // animation: show 3s;
+    // animation-fill-mode: forwards;
+  }
+}
+// @keyframes show {
+//   0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
+
+.board {
+  width: 30vw;
+  height: 30vw;
+  outline: 3px solid black;
+  gap: 5px;
+  background-color: blue;
+  margin: 100px auto 100px auto;
+  padding: 5px;
+  display: grid;
+  &__4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  &__5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  &__6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+.rad {
+  display: flex;
+  // position: absolute;
+  /* flex-direction: column; */
+}
+.changeAmountButton {
+}
